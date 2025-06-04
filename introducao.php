@@ -35,7 +35,7 @@
 
     // Declaração de variáveis (em PHP não precisamos declarar o tipo)
     $nome = "João";          // String
-    $idade = 25;             // Integer
+    $idade = 5;             // Integer
     $altura = 1.75;          // Float
     $ativo = true;           // Boolean
     $frutas = ["maçã", "banana", "laranja"]; // Array
@@ -77,7 +77,7 @@
 
     // Exemplo de switch
     echo "<h3>Exemplo de switch:</h3>";
-    $dia = 3;
+    $dia = 2;
     switch ($dia) {
         case 1:
             echo "Domingo<br>";

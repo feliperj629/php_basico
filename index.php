@@ -121,7 +121,31 @@
                     <li>Executar o script SQL para criar a tabela</li>
                 </ul>
             </div>
-            <a href="cadastro_produto.php">Acessar Cadastro de Produtos</a>
+            <a href="cadastro_produto.php">Acessar Cadastro de Produtos (Versão Tradicional)</a>
+        </div>
+
+        <div class="menu-item">
+            <h2>Cadastro de Produtos (AJAX)</h2>
+            <p>Versão moderna do sistema de cadastro de produtos utilizando AJAX para uma experiência mais dinâmica. 
+               Os dados são salvos e a lista é atualizada sem recarregar a página.</p>
+            <div class="destaque">
+                <strong>Funcionalidades:</strong>
+                <ul>
+                    <li>Todas as funcionalidades da versão tradicional</li>
+                    <li>Salvamento de dados via AJAX</li>
+                    <li>Atualização dinâmica da lista de produtos</li>
+                    <li>Mensagens de feedback em tempo real</li>
+                    <li>Interface mais responsiva e moderna</li>
+                </ul>
+            </div>
+            <div class="requisitos">
+                <strong>Requisitos:</strong>
+                <ul>
+                    <li>Mesmos requisitos da versão tradicional</li>
+                    <li>Navegador com suporte a JavaScript</li>
+                </ul>
+            </div>
+            <a href="cadastro_produto_ajax.php">Acessar Cadastro de Produtos (Versão AJAX)</a>
         </div>
 
         <div class="menu-item">
@@ -132,7 +156,9 @@
                 <li><strong>introducao.php</strong> - Material didático de introdução ao PHP</li>
                 <li><strong>cadastro.php</strong> - Formulário de cadastro de pessoas</li>
                 <li><strong>exibir_dados.php</strong> - Exibição dos dados do cadastro de pessoas</li>
-                <li><strong>cadastro_produto.php</strong> - Sistema de cadastro de produtos</li>
+                <li><strong>cadastro_produto.php</strong> - Sistema de cadastro de produtos (versão tradicional)</li>
+                <li><strong>cadastro_produto_ajax.php</strong> - Sistema de cadastro de produtos (versão AJAX)</li>
+                <li><strong>salvar_produto.php</strong> - Endpoint AJAX para salvar produtos</li>
                 <li><strong>conexao.php</strong> - Arquivo de conexão com o banco de dados</li>
                 <li><strong>criar_tabela.sql</strong> - Script SQL para criar a tabela de produtos</li>
                 <li><strong>css/estilos.css</strong> - Arquivo de estilos compartilhado</li>
