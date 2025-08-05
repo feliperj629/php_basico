@@ -9,6 +9,13 @@
 <body>
     <div class="container">
         <h1>Dados do Cadastro</h1>
+
+        <?php
+            print 'Nome teste: ' . $_POST["nome"];
+        ?>
+
+
+
         
         <?php
         // Verifica se o formulário foi enviado

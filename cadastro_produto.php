@@ -4,6 +4,10 @@ require_once 'conexao.php';
 $mensagem = '';
 $tipo_mensagem = '';
 
+// print "<pre>";
+// print_r($_POST);
+// print "</pre>";
+
 // Processar o formulário quando enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Limpar e validar os dados
@@ -19,7 +23,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         // Preparar e executar a consulta
         $sql = "INSERT INTO produtos (nome, descricao, preco, quantidade, data_cadastro) 
-                VALUES ('$nome', '$descricao', $preco, $quantidade, NOW())";
+                VALUES ('$nome', '$descricao', $preco, $quantidade, NOW());";
+        // print $sql;
+        // exit;
 
         if (executarConsulta($sql)) {
             $mensagem = "Produto cadastrado com sucesso!";
@@ -31,9 +37,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
+
 // Buscar produtos cadastrados
 $sql = "SELECT * FROM produtos ORDER BY data_cadastro DESC";
 $resultado = executarConsulta($sql);
+// print "<pre>";
+// print_r($resultado);
+// print "</pre>";
+
 ?>
 
 <!DOCTYPE html>

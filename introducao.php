@@ -42,7 +42,7 @@
 
     // Exibindo variáveis
     echo "<div class='exemplo'>";
-    echo "<h3>Exemplo de variáveis:</h3>";
+    echo "<h1>Exemplo de variáveis:</h1>";
     echo "Nome: " . $nome . "<br>";
     echo "Idade: " . $idade . "<br>";
     echo "Altura: " . $altura . "<br>";

@@ -32,6 +32,8 @@ function limparDados($dado)
 function executarConsulta($sql)
 {
     global $conexao;
+    // print $sql;
+    // exit;
     $resultado = mysqli_query($conexao, $sql);
     if (!$resultado) {
         die("Erro na consulta: " . mysqli_error($conexao));
